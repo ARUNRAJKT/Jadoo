@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts - Poppins (commonly used in travel websites) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+    <div class="hero-background">
+        <img src="./assests/hero-background.svg" alt="background" />
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="./assests/logo.svg" alt="Jadoo_logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Flights</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Bookings</a>
+                    </li>
+                </ul>
+                <div class="d-flex ms-3">
+                    <a href="#" class="btn me-3">Login</a>
+                    <a href="#" class="btn nav-btn-primary">Sign Up</a>
+                    <div class="language-selector ms-3">
+                        <i class="fas fa-globe"></i>
+                        <span>EN</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <!-- Hero Inner Container -->
+            <div class="hero-inner">
+                <!-- Left Content -->
+                <div class="hero-content">
+                    <span class="subheading">Start your journey</span>
+                    <h1>Discover Your Next Adventure</h1>
+                    <p>Explore the world's most beautiful destinations with exclusive deals and personalized travel
+                        packages.</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary">Find out more</a>
+                        <a href="#" class="btn btn-play">
+                            <span class="play-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg></span>
+                            Play demo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Container for Imagery -->
+                <div class="hero-imagery">
+                    <!-- Planes positioned away from text -->
+                    <div class="plane plane-one">
+                        <img src="./assests/hero-plain.svg" alt="plane" />
+                    </div>
+                    <div class="plane plane-two">
+                        <img src="./assests/hero-plain.svg" alt="plane" />
+                    </div>
+
+                    <!-- Character with proper positioning -->
+                    <div class="hero-character">
+                        <img src="./assests/hero-character.svg" alt="hero-characters">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="section-title">
+                <p>Category</p>
+                <h2>We Offer Best Services</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h3>Guided Tours</h3>
+                        <p>Explore destinations with our experienced guides who will show you hidden gems and share
+                            local knowledge.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                        <h3>Luxury Hotels</h3>
+                        <p>Stay in handpicked luxury accommodations with premium amenities and exceptional service.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <h3>Flight Booking</h3>
+                        <p>Get the best deals on flights with our exclusive partnerships with major airlines worldwide.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+<!-- Destinations Section -->
+<section class="destinations">
+    <div class="container">
+        <div class="section-title">
+            <p>Top Selling</p>
+            <h2>Top Destinations</h2>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="destination-card">
+                    <div class="destination-img">
+                        <img src="/api/placeholder/800/500" alt="Rome">
+                    </div>
+                    <div class="destination-content">
+                        <div class="destination-header">
+                            <h3>Rome, Italy</h3>
+                            <div class="destination-rating">
+                                <i class="far fa-star"></i> 4.8
+                            </div>
+                        </div>
+                        <div class="destination-details">
+                            <div class="price-section">
+                                <span class="price-label">From</span>
+                                <span class="price-value">$5.28k</span>
+                            </div>
+                            <div class="trip-duration">
+                                <span class="duration-arrow">
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </span>
+                                <span class="duration-text">10 days trip</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="destination-card">
+                    <div class="destination-img">
+                        <img src="/api/placeholder/800/500" alt="Paris">
+                    </div>
+                    <div class="destination-content">
+                        <div class="destination-header">
+                            <h3>Paris, France</h3>
+                            <div class="destination-rating">
+                                <i class="far fa-star"></i> 4.9
+                            </div>
+                        </div>
+                        <div class="destination-details">
+                            <div class="price-section">
+                                <span class="price-label">From</span>
+                                <span class="price-value">$4.2k</span>
+                            </div>
+                            <div class="trip-duration">
+                                <span class="duration-arrow">
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </span>
+                                <span class="duration-text">7 days trip</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="destination-card">
+                    <div class="destination-img">
+                        <img src="/api/placeholder/800/500" alt="Santorini">
+                    </div>
+                    <div class="destination-content">
+                        <div class="destination-header">
+                            <h3>Santorini, Greece</h3>
+                            <div class="destination-rating">
+                                <i class="far fa-star"></i> 4.7
+                            </div>
+                        </div>
+                        <div class="destination-details">
+                            <div class="price-section">
+                                <span class="price-label">From</span>
+                                <span class="price-value">$5.42k</span>
+                            </div>
+                            <div class="trip-duration">
+                                <span class="duration-arrow">
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </span>
+                                <span class="duration-text">8 days trip</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+    <!-- Steps Section -->
+    <section class="steps">
+        <div class="container">
+            <div class="section-title">
+                <h2>Book Your Next Trip in 3 Easy Steps</h2>
+                <p>Plan and book your perfect trip with expert advice, travel tips, destination information and
+                    inspiration from us.</p>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-4 position-relative">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>Choose Destination</h3>
+                        <p>Browse through our curated selection of popular destinations or use our search to find your
+                            dream location.</p>
+                    </div>
+                    <div class="d-none d-md-block step-line"></div>
+                </div>
+
+                <div class="col-md-4 position-relative">
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>Make Payment</h3>
+                        <p>Secure your booking with our easy payment options, including credit cards, PayPal, and more.
+                        </p>
+                    </div>
+                    <div class="d-none d-md-block step-line"></div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>Reach Airport on Date</h3>
+                        <p>Receive your detailed itinerary and travel documents, then simply arrive at the airport and
+                            begin your adventure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What People Say About Us</h2>
+                <p>Discover why travelers choose us for their unforgettable adventures around the world.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <img src="/api/placeholder/100/100" alt="Customer">
+                            </div>
+                            <div class="testimonial-author">
+                                <h4>Sarah Johnson</h4>
+                                <p>New York, USA</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Their attention to detail and personalized recommendations made our
+                            honeymoon absolutely perfect. We couldn't have asked for a better experience!"</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <img src="/api/placeholder/100/100" alt="Customer">
+                            </div>
+                            <div class="testimonial-author">
+                                <h4>David Wilson</h4>
+                                <p>London, UK</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The guided tour in Bali exceeded our expectations. The local guide
+                            was knowledgeable and showed us places we would never have found on our own."</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <img src="/api/placeholder/100/100" alt="Customer">
+                            </div>
+                            <div class="testimonial-author">
+                                <h4>Maria Rodriguez</h4>
+                                <p>Madrid, Spain</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">"From booking to return, everything was seamless. Their 24/7 support
+                            helped us resolve a minor issue quickly, allowing us to enjoy our vacation without worry."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logos Section -->
+    <section class="logos">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="logo-item">
+                        <img src="/api/placeholder/200/60" alt="Partner Logo">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="logo-item">
+                        <img src="/api/placeholder/200/60" alt="Partner Logo">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="logo-item">
+                        <img src="/api/placeholder/200/60" alt="Partner Logo">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="logo-item">
+                        <img src="/api/placeholder/200/60" alt="Partner Logo">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="logo-item">
+                        <img src="/api/placeholder/200/60" alt="Partner Logo">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="logo-item">
+                        <img src="/api/placeholder/200/60" alt="Partner Logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2>Subscribe to Get Special Price Offers</h2>
+                    <p>Join our newsletter to receive exclusive deals, travel tips, and inspiration for your next
+                        adventure.</p>
+                </div>
+                <div class="col-lg-6">
+                    <form class="contact-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                    <div class="footer-logo">TravelO</div>
+                    <p class="footer-text">Book your trip in minutes, get full control for much longer.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                    <h4>Destinations</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Bali</a></li>
+                        <li><a href="#">Paris</a></li>
+                        <li><a href="#">Santorini</a></li>
+                        <li><a href="#">Tokyo</a></li>
+                        <li><a href="#">All Destinations</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="footer-copyright">© 2025 TravelO. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="footer-copyright">Made with ❤️ for travelers across the globe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 50) {
+                document.querySelector('.navbar').classList.add('navbar-scrolled');
+            } else {
+                document.querySelector('.navbar').classList.remove('navbar-scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>
